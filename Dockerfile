@@ -28,9 +28,6 @@ RUN openssl req -new \
 
 COPY nginx.conf.template /etc/nginx/nginx.conf.template
 COPY entrypoint.sh .
-RUN apt-get update && apt-get install -y dos2unix
-RUN dos2unix /entrypoint.sh && apt-get --purge remove -y dos2unix && rm -rf /var/lib/apt/lists/*
-
 
 RUN chmod 644 entrypoint.sh
 
