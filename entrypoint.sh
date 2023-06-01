@@ -1,5 +1,5 @@
 #!/bin/sh
-echo hi
+echo hello
 
 
 set -eu
