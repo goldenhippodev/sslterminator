@@ -28,6 +28,7 @@ RUN openssl req -new \
 
 COPY nginx.conf.template /etc/nginx/nginx.conf.template
 COPY entrypoint.sh .
+RUN chmod 644 emtruypoint.sh
 
 EXPOSE 443
 
