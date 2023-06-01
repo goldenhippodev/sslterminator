@@ -77,3 +77,12 @@ Click "Advanced" button, then click "Proceed anyway".
 ## License
 
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+
+Added
+https://stackoverflow.com/questions/38905135/why-wont-my-docker-entrypoint-sh-execute
+to handle crlf and lf
+Needed to set the conf with this
+
+  proxy_buffer_size   128k;
+  proxy_buffers   4 256k;
+  proxy_busy_buffers_size   256k;
