@@ -1,6 +1,7 @@
 #!/bin/sh
 echo hi
 
+
 set -eu
 
 envsubst '$$PORT $$SSL_CERT $$SSL_KEY' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
