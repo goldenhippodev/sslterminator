@@ -43,13 +43,13 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            esplo/docker-local-ssl-termination-proxy:latest
-            esplo/docker-local-ssl-termination-proxy:${{ steps.tag_version.outputs.new_tag }}
+            goldenhippodev/sslterminator:latest
+            goldenhippodev/sslterminator:${{ steps.tag_version.outputs.new_tag }}
       - 
         name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: esplo/docker-local-ssl-termination-proxy
+          repository: goldenhippodev/sslterminator
           short-description: ${{ github.event.repository.description }}
