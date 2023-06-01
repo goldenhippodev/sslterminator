@@ -86,3 +86,8 @@ Needed to set the conf with this
   proxy_buffer_size   128k;
   proxy_buffers   4 256k;
   proxy_busy_buffers_size   256k;
+
+
+  To build
+   docker build -t goldenhippodev/sslterminator:latest .
+   docker push goldenhippodev/sslterminator:latest
