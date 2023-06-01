@@ -1,6 +1,6 @@
 #!/bin/sh
-echo hello
 
+echo hello
 
 set -eu
 
