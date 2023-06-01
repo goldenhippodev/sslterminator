@@ -87,7 +87,12 @@ Needed to set the conf with this
   proxy_buffers   4 256k;
   proxy_busy_buffers_size   256k;
 
+  source https://stackoverflow.com/questions/23844761/upstream-sent-too-big-header-while-reading-response-header-from-upstream
 
+  
   To build
    docker build -t goldenhippodev/sslterminator:latest .
    docker push goldenhippodev/sslterminator:latest
+
+  Hub url
+  https://hub.docker.com/repository/docker/goldenhippodev/sslterminator/general
