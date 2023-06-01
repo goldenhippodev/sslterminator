@@ -1,4 +1,5 @@
 #!/bin/sh
+echo hi
 
 set -eu
 
